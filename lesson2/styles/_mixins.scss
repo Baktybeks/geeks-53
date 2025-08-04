@@ -1,0 +1,21 @@
+@mixin centerBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button ($bg-color: green, $text-color: red, $font-size: 16px) {
+  background-color: $bg-color;
+  font-size: $font-size;
+  color: $text-color;
+}
+
+@mixin border ($color, $size) {
+  border: $size solid $color;
+}
+
+@mixin responsive ($size) {
+  @media screen and (max-width: $size) {
+    @content
+  }
+}
