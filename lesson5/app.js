@@ -115,7 +115,7 @@ let age1 = prompt("Введите возраст");
 console.log(age1);
 if (age1 >= 1000) {
   console.log("ВЫ бессмертный");
-} else if (age1 >= 18) {
+} else if (age1 > 18 || age1 == 18) {
   console.log("ВЫ совешеннолетний");
 } else if (age1 >= 0) {
   console.log("ВЫ  не совешеннолетний");
